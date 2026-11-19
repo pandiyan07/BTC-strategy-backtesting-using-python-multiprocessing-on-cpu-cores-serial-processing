@@ -24,7 +24,7 @@ Performance Analytics**
 ## About The Project
 
 This project is a parameter-optimization backtesting engine for
-rule-based trading strategies. It loads historical OHLC data, computes
+rule-based trading strategies. It loads Binance's Bicoin historical OHLC data stored offline, computes
 EMA and ATR indicators, evaluates thousands of parameter combinations in
 parallel using multiprocessing, simulates long and short trades,
 measures profitability, winning percentage, trade statistics, ATR
