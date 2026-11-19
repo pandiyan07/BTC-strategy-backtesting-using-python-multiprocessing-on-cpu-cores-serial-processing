@@ -29,7 +29,8 @@ EMA and ATR indicators, evaluates thousands of parameter combinations in
 parallel using multiprocessing, simulates long and short trades,
 measures profitability, winning percentage, trade statistics, ATR
 filters, and exports a ranked Excel report containing the
-best-performing parameter sets.
+best-performing parameter sets. It does all these functions by directly running on the CPU cores instead on GPU, 
+by splitting the work load among newly created python processes that equals to the number of cpu cores available on the machine it is running
 
 ### Built With
 
@@ -67,8 +68,8 @@ best-performing parameter sets.
 ### Installation
 
 ``` bash
-git clone https://github.com/yourusername/trading-backtester.git
-cd trading-backtester
+git clone https://github.com/pandiyan07/BTC-strategy-backtesting-using-python-multiprocessing-on-cpu-cores-serial-processing.git
+cd BTC-strategy-backtesting-using-python-multiprocessing-on-cpu-cores-serial-processing
 pip install pandas numpy pandas-ta openpyxl
 python backtester_final_with_winning_percentage_top_five_trades_atr_and_tsl.py
 ```
